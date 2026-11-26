@@ -1,5 +1,6 @@
 services:
   cody:
+    image: cody-cody:latest
     build:
       context: .
       dockerfile: Dockerfile
