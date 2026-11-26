@@ -1,0 +1,22 @@
+services:
+  cody:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cody_app
+    restart: unless-stopped
+    ports:
+      - "9022:9022"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    env_file:
+      - .env
+    environment:
+      - PORT=9022
+      - HOST=0.0.0.0
+      - NITRO_PORT=9022
+      - NITRO_HOST=0.0.0.0
+      - DB_HOST=host.docker.internal
+      - DB_PORT=5432
+      - DB_NAME=cody
+      - DB_SCHEMA=maria
