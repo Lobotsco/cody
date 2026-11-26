@@ -6,6 +6,7 @@ services:
       dockerfile: Dockerfile
     container_name: cody_app
     restart: unless-stopped
+    mem_limit: 1g
     ports:
       - "9026:9026"
     extra_hosts:
@@ -17,6 +18,7 @@ services:
       - HOST=0.0.0.0
       - NITRO_PORT=9026
       - NITRO_HOST=0.0.0.0
+      - NODE_OPTIONS=--max-old-space-size=768
       - DB_HOST=host.docker.internal
       - DB_PORT=5432
       - DB_NAME=cody
