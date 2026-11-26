@@ -343,6 +343,8 @@ async function toggleBloqueo(u: AdminUsuario) {
             </div>
           </UCard>
         </template>
+
+        <AppFooter />
       </div>
 
       <!-- Modal Crear / Editar Usuario -->

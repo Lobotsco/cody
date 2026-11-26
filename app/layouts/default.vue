@@ -115,7 +115,12 @@ const searchGroups = computed(() => {
       </template>
 
       <template #footer="{ collapsed }">
-        <UserMenu :collapsed="collapsed" />
+        <div class="w-full space-y-2">
+          <UserMenu :collapsed="collapsed" />
+          <p v-if="!collapsed" class="px-2 pb-1 text-center text-[11px] text-muted">
+            © 2026 ❤️ by Lobots Versión 1.1.1
+          </p>
+        </div>
       </template>
     </UDashboardSidebar>
 

@@ -531,6 +531,8 @@ const tipoOptions = [
             </div>
           </UCard>
         </template>
+
+        <AppFooter />
       </div>
 
       <!-- Modal Crear / Editar Registro -->

@@ -202,6 +202,8 @@ const recentItems = computed(() => (cuentasData.value?.items || []).slice(0, 5))
             </div>
           </div>
         </UCard>
+
+        <AppFooter />
       </div>
     </template>
   </UDashboardPanel>

@@ -257,6 +257,8 @@ async function confirmDelete() {
             </div>
           </UCard>
         </div>
+
+        <AppFooter />
       </div>
 
       <!-- Modal Crear / Editar Rol -->
