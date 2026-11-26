@@ -7,15 +7,15 @@ services:
     container_name: cody_app
     restart: unless-stopped
     ports:
-      - "9022:9022"
+      - "9026:9026"
     extra_hosts:
       - "host.docker.internal:host-gateway"
     env_file:
       - .env
     environment:
-      - PORT=9022
+      - PORT=9026
       - HOST=0.0.0.0
-      - NITRO_PORT=9022
+      - NITRO_PORT=9026
       - NITRO_HOST=0.0.0.0
       - DB_HOST=host.docker.internal
       - DB_PORT=5432

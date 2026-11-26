@@ -1,6 +1,6 @@
 # Cody — Control de Cuentas Diarias
 
-Aplicación web responsiva construida con **Nuxt 4** y el template gratuito **Nuxt UI Dashboard**, conectada a **PostgreSQL** (esquema `maria`) y lista para ejecutarse en **Docker** por el puerto **9022**.
+Aplicación web responsiva construida con **Nuxt 4** y el template gratuito **Nuxt UI Dashboard**, conectada a **PostgreSQL** (esquema `maria`) y lista para ejecutarse en **Docker** por el puerto **9026**.
 
 ## Funcionalidades principales
 
@@ -20,7 +20,7 @@ Aplicación web responsiva construida con **Nuxt 4** y el template gratuito **Nu
 - **Administración -> Roles**:
   - Creación, edición y eliminación de roles asignando permisos sobre las **opciones de menú hijo**.
 
-## Ejecución con Docker (Puerto 9022)
+## Ejecución con Docker (Puerto 9026)
 
 ```bash
 cp .env.example .env
@@ -28,7 +28,7 @@ cp .env.example .env
 docker compose up -d --build
 ```
 
-La aplicación quedará disponible en: `http://localhost:9022`
+La aplicación quedará disponible en: `http://localhost:9026`
 
 ## Desarrollo local
 

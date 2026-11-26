@@ -17,13 +17,13 @@ FROM node:22-alpine AS runner
 WORKDIR /app
 
 ENV NODE_ENV=production
-ENV NITRO_PORT=9022
+ENV NITRO_PORT=9026
 ENV NITRO_HOST=0.0.0.0
-ENV PORT=9022
+ENV PORT=9026
 ENV HOST=0.0.0.0
 
 COPY --from=builder /app/.output /app/.output
 
-EXPOSE 9022
+EXPOSE 9026
 
 CMD ["node", ".output/server/index.mjs"]
